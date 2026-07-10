@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西藏觀光景點導覽 - 導遊講解</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #8B1A1A 0%, #C41E3A 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .meta {
+            font-size: 0.95em;
+            opacity: 0.8;
+        }
+        
+        .content {
+            padding: 50px 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section h2 {
+            font-size: 2.2em;
+            color: #8B1A1A;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #D4AF37;
+        }
+        
+        .section h3 {
+            font-size: 1.5em;
+            color: #1A4B7A;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 5px solid #87CEEB;
+        }
+        
+        .section p {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            color: #555;
+            text-align: justify;
+        }
+        
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            color: #666;
+            font-size: 1.05em;
+        }
+        
+        .section li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #C41E3A;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: #fff9e6;
+            padding: 25px;
+            border-left: 5px solid #D4AF37;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #1A4B7A;
+        }
+        
+        .footer {
+            background: #f5f5f5;
+            padding: 30px 40px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+            font-size: 0.95em;
+        }
+        
+        .footer a {
+            color: #8B1A1A;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .transcript-note {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: #1565c0;
+            border-left: 4px solid #1976d2;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.6em;
+            }
+            
+            .section h3 {
+                font-size: 1.2em;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>🏔️ 西藏觀光景點導覽</h1>
+                <p class="subtitle">導遊講解逐字稿整理</p>
+                <p class="meta">生成於 2026年07月10日 23:00 | 內容提取自導遊現場講解</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="transcript-note">
+                📝 本文檔根據導遊的實際講解逐字稿整理而成，提取了關於西藏文化、景點、信仰和醫學傳統的核心內容。
+            </div>
+            
+            <div class="section">
+                <h2>🏛️ 主要景點介紹</h2>
+                
+                <h3>約布拉康 (第一座寺院)</h3>
+                <div class="card">
+                    <p><strong>歷史背景：</strong>修建於公元前20世紀，距今已有2000多年歷史，是西藏第一座由漢藏結合風格建築的寺院，也是藏傳佛教的重要聖地。</p>
+                    <p><strong>名稱由來：</strong>「約布拉康」是由當時的統治者松贊干布（藏王）命名，字面意思是「第一座宮殿」。</p>
+                    <p><strong>文化意義：</strong>被稱為「第一座佛法三具權的實願」，是藏傳佛教發展的重要里程碑。這裡供奉著用天然材料形成的珍貴佛像。</p>
+                </div>
+                
+                <h3>羅布林卡 (達賴喇嘛的夏宮)</h3>
+                <div class="card">
+                    <p><strong>簡介：</strong>羅布林卡意為「珍珠園」，是達賴喇嘛每年夏季的官方住所，融合了藏族、印度和漢族的建築特色。</p>
+                    <p><strong>建築風格：</strong>體現了不同文明的交融，展示了西藏園林藝術的最高水平。</p>
+                    <p><strong>壁畫特色：</strong>內部壁畫詳細講述了藏民族起源的故事，是了解西藏文化的重要載體。</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🧘 藏傳佛教信仰體系</h2>
+                
+                <h3>信仰的核心</h3>
+                <p>西藏人民對佛教的信仰並非簡單的物質追求，而是：</p>
+                <ul>
+                    <li><strong>心理寄託：</strong>求得心理上的安寧與平靜</li>
+                    <li><strong>精神力量：</strong>在困難時期獲得信心和支持</li>
+                    <li><strong>人生智慧：</strong>每個人都可以成為他人的「佛菩薩」，通過給予建議和幫助獲得精神滿足</li>
+                </ul>
+                
+                <h3>觀世音菩薩的傳說</h3>
+                <div class="highlight">
+                    <p>觀世音菩薩擁有1000隻手臂和1000隻眼睛，據說有998隻在前方，另外2隻在後方。這體現了菩薩的無所不在和無所不能。</p>
+                </div>
+                
+                <h3>輪迴與業力</h3>
+                <p>藏族人民相信因果輪迴，認為今生的所有遭遇都是前世所為的結果。他們不求今生富貴，只求來世安樂。</p>
+            </div>
+            
+            <div class="section">
+                <h2>💊 西藏傳統醫學</h2>
+                
+                <h3>古老的診斷方法</h3>
+                <p>西藏醫學擁有獨特的診斷方式，相比中西醫都更加精妙：</p>
+                
+                <h3>石頭診斷法 (時整)</h3>
+                <div class="card">
+                    <p><strong>原理：</strong>在游牧時代，人們無法帶著醫生四處遷移。當患者生病時，由家人帶患者出帳篷，向任意方向走三步後讓患者握住一塊石頭。</p>
+                    <p><strong>程序：</strong></p>
+                    <ul>
+                        <li>用酥油覆蓋石頭</li>
+                        <li>用哈達（絲綢布）包裹</li>
+                        <li>交給藏醫診斷</li>
+                    </ul>
+                    <p><strong>診斷：</strong>藏醫透過觀察石頭的凹陷、裂痕、顏色和紋路來判斷患者的病情。</p>
+                </div>
+                
+                <h3>尿液診斷法 (尿整)</h3>
+                <p>藏醫通過觀察患者的尿液顏色、氣味、溫度等特徵，甚至用舌頭品嚐，來診斷疾病。這種方法要求藏醫付出巨大代價——長期從事這項工作會導致眼睛失明、嗅覺喪失和味覺退化。</p>
+                
+                <h3>掌紋診斷法 (掌整)</h3>
+                <p>現代西藏醫學通常採用掌紋診斷法，因為雙手掌和雙腳掌對應整個身體的經絡系統。身體的任何微妙變化都會首先反映在手掌上。</p>
+                
+                <h3>西藏醫學的優勢</h3>
+                <ul>
+                    <li><strong>預防為主：</strong>注重疾病預防而非治療</li>
+                    <li><strong>疾病率低：</strong>西藏民族的奇怪病痛發病率不到10%，遠低於平均20%</li>
+                    <li><strong>解剖學精妙：</strong>西藏醫學的解剖學比西醫還要精細</li>
+                    <li><strong>三棵樹理論：</strong>唐卡繪畫中的醫學三棵樹包含：生命樹（生理病理）、診斷樹（診斷方法）、治療樹（治療方案）</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🏔️ 高原環境與健康</h2>
+                
+                <h3>高原對身體的影響</h3>
+                <p>西藏地處高海拔，給遊客和當地居民帶來多方面的身體變化：</p>
+                <ul>
+                    <li><strong>心率變化：</strong>心率會變得明顯變慢，這是高原心臟病的徵兆</li>
+                    <li><strong>心臟膨脹：</strong>長期生活在高原會導致心臟變大</li>
+                    <li><strong>身體膨脹現象：</strong>全身器官都會膨脹，將細小的病痛放大化，這是身體的預警機制</li>
+                    <li><strong>認知影響：</strong>高原缺氧會導致認知反應變慢，健忘、說話重複等都是正常現象</li>
+                </ul>
+                
+                <h3>歷史壽命與現代改善</h3>
+                <p>過去西藏人民的平均壽命只有40歲左右，主要原因是：</p>
+                <ul>
+                    <li>缺乏現代醫療設施</li>
+                    <li>天花等傳染病被視為絕症</li>
+                    <li>患病者會被隔離在荒島自生自滅</li>
+                </ul>
+                
+                <h3>心理因素的重要性</h3>
+                <div class="highlight">
+                    <p><strong>關鍵發現：</strong>心理狀態對高原反應的影響巨大。積極樂觀的心態能顯著減輕高原反應的症狀。人生只有約3萬多天，開心和難過都是一天，何必讓自己不開心呢？</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🙏 西藏寺院文化</h2>
+                
+                <h3>蓮花生大師與寺院建立</h3>
+                <p>寺院的建立與蓮花生大師密切相關。當松贊干布王妃想要提前看到完成後的寺院樣貌時，蓮花生大師從手掌中幻化出完整的寺院景象。</p>
+                
+                <h3>七絕 (西藏最早的出家僧人)</h3>
+                <ul>
+                    <li>西藏最早出家為僧的只有七位，稱為「七絕」</li>
+                    <li>他們都是西藏達官貴人的子弟</li>
+                    <li>由蓮花生大師（紅教/寧瑪派創始人）創立</li>
+                </ul>
+                
+                <h3>僧人供養制度</h3>
+                <p>最初的規定是「七戶養一僧」，即七戶人家共同供養一位僧人。現代寺院則有政府撥款、門票收入和信眾供養等多種收入來源。</p>
+                
+                <h3>寺院的三種建築風格</h3>
+                <ul>
+                    <li><strong>藏式風格：</strong>體現藏族文化特色</li>
+                    <li><strong>印度風格：</strong>反映宗教傳播的路線</li>
+                    <li><strong>漢式風格：</strong>展現多民族文化融合</li>
+                </ul>
+                
+                <h3>參觀寺院的禮儀</h3>
+                <ul>
+                    <li>不要用單手指向佛像</li>
+                    <li>不能隨意觸摸佛像或壁畫</li>
+                    <li>可以戴帽子和墨鏡（對眼睛無礙）</li>
+                    <li>要尊重朝聖者和轉經活動</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>💭 人生哲理與心態</h2>
+                
+                <h3>心態的力量</h3>
+                <p>導遊分享的一個感人故事：一位被醫生診斷只能活一年的老人，通過放棄擔憂、保持樂觀的心態，實際上活了許多年。他的建議是：「不要有心理壓力，現在能活著就是福氣，心態好了什麼都好了。」</p>
+                
+                <h3>人生智慧</h3>
+                <ul>
+                    <li><strong>不要為他人的錯誤買單：</strong>別人犯的錯應該由他們承受，不要讓他人的言行影響自己的心情</li>
+                    <li><strong>家庭關係的珍貴：</strong>不要將負面情緒發洩給最親近的人，因為他們才是真正陪伴你到老的人</li>
+                    <li><strong>長期幸福：</strong>保持良好的溝通和相互尊重，夫妻雙方可以幾年都不吵架</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🌍 民族特色與文化融合</h2>
+                
+                <h3>藏族人民的友善</h3>
+                <p>西藏人民以其友善和熱情著稱。互相尊重和真誠是建立良好關係的基礎——「你對他好，他才會對你好」。</p>
+                
+                <h3>文化的多元融合</h3>
+                <p>西藏是絲綢之路上的重要樞紐，在這裡東西方文化、藏族文化與漢族文化相互交融，形成了獨特的高原文明。</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 西藏觀光景點導覽 | 內容根據導遊實地講解整理</p>
+            <p>祝您在西藏的旅程愉快！願您擁有開放的心態和健康的身體。</p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
+                本文檔生成於 2026年07月10日
+            </p>
+        </div>
+    </div>
+</body>
+</html>
