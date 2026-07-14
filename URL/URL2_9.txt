@@ -1,0 +1,2 @@
+這是2_9，Github上的ai-stock-report-generator匯入skill寫成html
+https://m11416222-1.github.io/6291_stockaireport.html
